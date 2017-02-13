@@ -4,10 +4,12 @@ safe: false
 markdown: kramdown
 highlighter: pygments
 lsi: false
-permalink: /:title
+permalink: /posts/:title.html
+keep_files:  ['.git','.svn']
 paginate:     8
 timezone: TIMEZONE
 
+name: wztao
 title: wztao'blog
 description: hi ! This is wztao
 baseurl: /blog
@@ -15,11 +17,23 @@ url: /blog # replace by your site's url
 twitter_username: wztao
 github_username:  wztao # (your name)
 accent: "#f7f7e6" # accent color for blog column
+all_categories: [
+["spring", "Spring","/posts/spring.html"], 
+["hadoop", "Hadoop","/posts/hadoop.html"],
+["storm", "Storm","/posts/storm.html"], 
+["linux", "Linux","/posts/linux.html"],
+["middleware", "中间件","/posts/middleware.html"], 
+["jvm", "JVM","/posts/jvm.html"],
+["note", "笔记","/note.html"],
+["professional", "professional","/posts/professional.html"],
+["essay", "随笔","/posts/essay.html"]
+]
 
 author: wztao
 address: ""
 email: ""
 encoding: "utf-8"
+excerpt_separator: "\n\n"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # clude files
